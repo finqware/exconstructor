@@ -1,4 +1,4 @@
-defmodule Utils do
+defmodule ExConstructor.Utils do
   @doc """
     Attempts first to use an existing atom rathen than creating a new one.
     Avoids a potential DDoS attack on the BEAM.
