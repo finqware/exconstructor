@@ -160,8 +160,8 @@ defmodule ExConstructor do
       under_str = Macro.underscore(str)
       up_camel_str = Macro.camelize(str)
       camel_str = Macro.camelize(str) |> lcfirst
-      under_atom = Utils.to_existing_atom(under_str)
-      camel_atom = Utils.to_existing_atom(camel_str)
+      under_atom = ExConstructor.Utils.to_existing_atom(under_str)
+      camel_atom = ExConstructor.Utils.to_existing_atom(camel_str)
 
       value =
         cond do
